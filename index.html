@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My awesome music app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img id="background" src="./assets/cover/106207.jpg" alt="">
+    <audio id="song" src="./assets/music/Senorita - Shawn Mendes_ Camila Cabello.mp3"></audio>
+
+    <div class="container">
+        <div class="box"></div>
+
+        <img id="thumbnail" src="./assets/cover/106207.jpg" alt="" >
+        <img id="play-pause" src="./assets/icon/icons8-play-64.png" onclick="playPause()" alt="">
+        <img id="next-song" src="./assets/icon/icons8-forward-64.png" alt="">
+        <img id="previous-song" src="./assets/icon/icons8-backward-button-64.png" alt="">
+
+        <div class="song-artist">Shawn Mendes, Camila Cabello</div>
+        <div class="song-title">Señorita</div>
+
+        <input type="range" min="0" max="" value="0" id="progress-bar">
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
